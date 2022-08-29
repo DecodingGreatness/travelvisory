@@ -1,4 +1,5 @@
 import { makeStyles } from "@material-ui/core/styles";
+import { alpha } from "@material-ui/core/styles/colorManipulator";
 
 export default makeStyles((theme) => ({
   title: {
@@ -10,8 +11,8 @@ export default makeStyles((theme) => ({
   search: {
     position: "relative",
     borderRadius: theme.shape.borderRadius,
-    // backgroundColor: alpha(theme.palette.common.white, 0.15),
-    // "&:hover": { backgroundColor: alpha(theme.palette.common.white, 0.25) },
+    backgroundColor: alpha(theme.palette.common.white, 0.15),
+    "&:hover": { backgroundColor: alpha(theme.palette.common.white, 0.25) },
     marginRight: theme.spacing(2),
     marginLeft: 0,
     width: "100%",
